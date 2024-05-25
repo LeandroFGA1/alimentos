@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-
+import { Link } from "react-router-dom";
 
 function LoginBtn() {
     const [isHovered, setIsHovered] = useState(false);
@@ -28,14 +28,14 @@ function LoginBtn() {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >
-                    <a href="/login">
+                    <Link to={"/login"}>
                         <AccountCircleIcon
                         color={isClicked ? 'primary' : isHovered ? 'primary' : 'white'}
                         className='mt-1'
                         sx={{fontSize:30}}
                         />
                         <span className=' sm:hidden text-white'>Ingresar</span>
-                    </a>
+                    </Link>
                     
                 </div>
         </div>
