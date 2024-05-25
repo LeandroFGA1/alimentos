@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import LoginBtn from './LoginBtn';
 import CarritoBtn from './CarritoBtn';
 import NotifyBtn from './NotifyBtn';
+import { Link } from "react-router-dom";
 
 function Header() {
     const [isChecked, setIsChecked] = useState(false);
@@ -35,7 +36,9 @@ function Header() {
                     </div>
                     <nav className={`${isChecked ? "block":" hidden"} h-[calc(100vh-80px)] top-[80px] w-full bg-red-500 absolute sm:block sm:relative sm:h-full sm:top-0 sm:bg-transparent`}>
                         <ul className='flex flex-col ml-8 gap-4  capitalize font-semibold text-secondary sm:flex-row sm:ml-4 text-lg sm:h-full sm:items-end lg:gap-6 md:text-xl lg:text-2xl'>
-                            <li className=" hover:text-white transition-all"><a href="/products">ordenar</a></li>
+                            <li className=" hover:text-white transition-all">
+                                <Link to={"/products"}>ordenar</Link>
+                            </li>
                             <li className=" hover:text-white transition-all"><a href="#">calidad</a></li>
                             <li className=" hover:text-white transition-all"><a href="#">servicios</a></li>
                             <li className=" hover:text-white transition-all"><a href="#">nosotros</a></li>

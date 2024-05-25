@@ -4,6 +4,7 @@ function Products() {
   return (
     <div className=' h-fit min-h-screen w-full bg-red-500 flex gap-6 flex-col'>
       {/* primer modelo de card */}
+      <div>card modelo 1</div>
       <div class="card-1 flex-col md:flex-row justify-between flex gap-4 items-start mx-4 py-12">
         <div class="flex bg-white rounded-lg shadow dark:bg-gray-800 flex-col md:flex-row">
           <div class="relative w-full md:w-48 flex justify-center items-center">
@@ -12,7 +13,7 @@ function Products() {
           </div>
           <form class="flex-auto p-6">
               <div class="flex flex-wrap">
-                  <h1 class="flex-auto text-xl font-semibold dark:text-gray-50">Product name</h1>
+                  <h1 class="flex-auto text-xl font-semibold dark:text-gray-50">Producto</h1>
                   <div class="text-xl font-semibold text-gray-500 dark:text-gray-300">$110.00</div>
                   <div class="flex-none w-full mt-2 text-sm font-medium text-gray-500 dark:text-gray-300">In stock</div>
               </div>
@@ -53,6 +54,8 @@ function Products() {
         </form>
         </div>
       </div>
+      {/* segundo modelo de card */}
+      <div>card modelo 2</div>
       <div className='card-2'>
       <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
         <a href="#">
@@ -78,6 +81,8 @@ function Products() {
         </a>
     </div>
       </div>
+      {/* tercer modelo de card */}
+      <div>card modelo 3</div>
       <div className='card-3'>
         <article class="max-w-sm w-full bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700">
           <div>

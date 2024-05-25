@@ -37,12 +37,12 @@ function Register() {
                         </div>
                     </div>
                     <div>
-                        <label htmlFor="role" className="block text-sm font-medium leading-6 text-black">Seleccionar Rol</label>
+                        <label htmlFor="role" className="block text-sm font-medium leading-6 text-black">Seleccione una opción</label>
                         <div className="mt-2">
                             <select id="role" name="role" required className="block w-full rounded-md border-0 py-1.5 text-black shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-black/80 sm:text-sm sm:leading-6">
-                                <option value="">Seleccione una opción</option>
-                                <option value="admin">Empresa</option>
-                                <option value="user">Persona</option>
+                                <option value="">seleccione</option>
+                                <option value="empresa">Empresa</option>
+                                <option value="persona">Persona</option>
                             </select>
                         </div>
                     </div>
