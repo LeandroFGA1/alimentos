@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 function Login() {
     return (
-        <div class=" flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+        <div class=" flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 bg-gray-100">
             <div className='logo-login h-full flex items-center justify-center'>
                 <h1 className='text-3xl md:text-4xl text-black/60 uppercase flex flex-col font-bold text-center'>
                     alimentos
@@ -36,7 +36,7 @@ function Login() {
                 </form>
                 <p class="mt-10 text-center text-sm text-gray-500">
                     No estas registrado?
-                    <Link class="font-semibold leading-6 text-black hover:text-black/80" to={"/register"}>Registrate ahora.</Link>
+                    <Link class="font-semibold leading-6 text-black hover:text-black/80" to={"/register"}> Registrate ahora.</Link>
                 </p>
             </div>
         </div>

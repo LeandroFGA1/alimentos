@@ -14,7 +14,7 @@ function MainLayout({children}) {
     return (
         <>
             <ThemeProvider theme={theme}>
-                <header><Header/></header>
+                <header className=' bg-green-500'><Header/></header>
                 <main className='mt-20 md:mt-24'>{children}</main>
                 <footer>owo</footer>
             </ThemeProvider>

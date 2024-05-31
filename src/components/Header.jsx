@@ -10,7 +10,7 @@ function Header() {
         setIsChecked(!isChecked)
     };
     return (
-        <div className=' h-20 md:h-24 w-full bg-black fixed'>
+        <div className=' h-20 md:h-24 w-full bg-black fixed z-10'>
             <div className='h-full w-full flex justify-between text-2xl'>
                 <div className='left-container ml-3 h-full'>
                     <a href="/">
@@ -36,13 +36,21 @@ function Header() {
                     </div>
                     <nav className={`${isChecked ? "block":" hidden"} h-[calc(100vh-80px)] top-[80px] w-full bg-red-500 absolute sm:block sm:relative sm:h-full sm:top-0 sm:bg-transparent`}>
                         <ul className='flex flex-col ml-8 gap-4  capitalize font-semibold text-secondary sm:flex-row sm:ml-4 text-lg sm:h-full sm:items-end lg:gap-6 md:text-xl lg:text-2xl'>
-                            <li className=" hover:text-white transition-all">
+                            <li className=" hover:text-white transition-all mb-2">
                                 <Link to={"/products"}>ordenar</Link>
                             </li>
-                            <li className=" hover:text-white transition-all"><a href="#">calidad</a></li>
-                            <li className=" hover:text-white transition-all"><a href="#">servicios</a></li>
-                            <li className=" hover:text-white transition-all"><a href="#">nosotros</a></li>
-                            <li className='sm:hidden md:block hover:text-white transition-all'><a href="#">contacto</a></li>
+                            <li className=" hover:text-white transition-all sm:mb-2">
+                                <Link to={"/quality"}>Calidad</Link>
+                            </li>
+                            <li className=" hover:text-white transition-all sm:mb-2">
+                                <Link to={"/services"}>servicios</Link>
+                            </li>
+                            <li className=" hover:text-white transition-all sm:mb-2">
+                                <Link to={"/aboutUs"}>nosotros</Link>
+                            </li>
+                            <li className=' hover:text-white transition-all sm:mb-2 sm:hidden md:block'>
+                                <Link to={"/contact"}>contacto</Link>    
+                            </li>
                         </ul>
                         <div className='sm:hidden'>
                             <LoginBtn/>

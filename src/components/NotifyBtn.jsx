@@ -1,7 +1,6 @@
 import React,{useState} from 'react';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-
-
+import NotificationsOffIcon from '@mui/icons-material/NotificationsOff';
 function NotifyBtn() {
   const [displayNoti,setDisplayNoti] = useState(false);
   const [showNoti,setShowNoti] = useState(false);
@@ -23,7 +22,15 @@ function NotifyBtn() {
         <div onClick={toggleNoti} className=' cursor-pointer'>
             <NotificationsIcon sx={{fontSize:30}} color='white' />
         </div>
-        <div className={` ${displayNoti? "block":"hidden"} ${showNoti? " top-20 md:top-24 opacity-100":"opacity-0 top-60"} absolute transition-all duration-500  w-[250px] h-[250px] bg-green-400  right-[7%]`}></div>
+        <div className={` ${displayNoti? "block":"hidden"} ${showNoti? " top-20 md:top-24 opacity-100":"opacity-0 top-60"} absolute transition-all duration-500  w-[250px] h-[250px] bg-black  right-[7%] rounded-b-xl`}>
+          <div className='h-full bg-white/10 rounded-b-xl'>
+            <div className='flex flex-col items-center text-center h-full justify-center'>
+              <NotificationsOffIcon sx={{fontSize:30}} color='white'/>
+              <span className='text-white/90 w-[180px]'>No tienes notificaciones por hora.</span>
+            </div>
+          </div>
+          
+        </div>
     </div>
   );
 }
