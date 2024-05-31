@@ -5,7 +5,7 @@ function Quality() {
         <div className="min-h-screen w-full bg-black/50 p-8">
             <div className=" max-w-7xl mx-auto">
                 <h1 className="text-4xl font-bold text-center text-black/95 mb-12">Calidad</h1>
-                <section className="bg-white shadow-lg rounded-lg p-6 mb-12">
+                <section className="bg-white/85 shadow-lg rounded-lg p-6 mb-12">
                     <h2 className="text-3xl font-semibold text-black/90 mb-4">Nuestros Materiales</h2>
                     <div className="flex flex-col md:flex-row items-center md:items-start">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg" alt="Materiales" className="w-full md:w-1/2 rounded-lg mb-6 md:mb-0 md:mr-6" />
@@ -15,7 +15,7 @@ function Quality() {
                     </div>
                 </section>
                 
-                <section className="bg-white shadow-lg rounded-lg p-6 mb-12">
+                <section className="bg-white/85 shadow-lg rounded-lg p-6 mb-12">
                     <h2 className="text-3xl font-semibold text-black/90 mb-4">Estandares de Sanidad</h2>
                     <div className="flex flex-col md:flex-row items-center md:items-start">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg" alt="Sanidad" className="w-full md:w-1/2 rounded-lg mb-6 md:mb-0 md:mr-6" />
@@ -25,7 +25,7 @@ function Quality() {
                     </div>
                 </section>
 
-                <section className="bg-white shadow-lg rounded-lg p-6 mb-12">
+                <section className="bg-white/85 shadow-lg rounded-lg p-6 mb-12">
                         <h2 className="text-3xl font-semibold text-black/90 mb-4">Calidad de las Bandejas</h2>
                         <div className="flex flex-col md:flex-row items-center md:items-start">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg" alt="Bandejas" className="w-full md:w-1/2 rounded-lg mb-6 md:mb-0 md:mr-6" />
@@ -35,7 +35,7 @@ function Quality() {
                         </div>
                 </section>
                 
-                <section className="bg-white shadow-lg rounded-lg p-6 mb-12">
+                <section className="bg-white/85 shadow-lg rounded-lg p-6 mb-12">
                     <h2 className="text-3xl font-semibold text-black/90 mb-4">Aprobación del Ministerio de Salud</h2>
                     <div className="flex flex-col md:flex-row items-center md:items-start">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg" alt="Aprobación" className="w-full md:w-1/2 rounded-lg mb-6 md:mb-0 md:mr-6" />
@@ -45,7 +45,7 @@ function Quality() {
                     </div>
                 </section>
 
-                <section className="bg-white shadow-lg rounded-lg p-6 mb-12">
+                <section className="bg-white/85 shadow-lg rounded-lg p-6 mb-12">
                     <h2 className="text-3xl font-semibold text-black/90 mb-4">Sistema de Sellos</h2>
                     <div className="flex flex-col items-center text-center">
                         <div className='flex gap-3 w-full flex-wrap items-center justify-center'>
