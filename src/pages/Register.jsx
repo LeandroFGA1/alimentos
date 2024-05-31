@@ -43,6 +43,7 @@ function Register() {
                                 <option value="">seleccione</option>
                                 <option value="empresa">Empresa</option>
                                 <option value="persona">Persona</option>
+                                <option value="proveedor">Proveedor</option>
                             </select>
                         </div>
                     </div>
