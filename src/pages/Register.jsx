@@ -2,7 +2,7 @@ import React from 'react'
 
 function Register() {
     return (
-        <div class=" flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 bg-black/10">
+        <div class=" flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 bg-bg1">
             <div className='logo-login h-full flex items-center justify-center'>
                 <h1 className='text-3xl md:text-4xl text-black/60 uppercase flex flex-col font-bold text-center'>
                     alimentos

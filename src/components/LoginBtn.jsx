@@ -30,7 +30,7 @@ function LoginBtn() {
                 >
                     <Link to={"/login"}>
                         <AccountCircleIcon
-                        color={isHovered ? 'primary' : 'white'}
+                        color={isHovered ? 'bg' : 'white'}
                         className='mt-1'
                         sx={{fontSize:30}}
                         />

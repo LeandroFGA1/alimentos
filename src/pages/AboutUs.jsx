@@ -1,16 +1,17 @@
 import React from 'react';
+import logo from "../assets/AlimentosSantiagoLogobyDesigner.png"
 
 function AboutUs() {
     return (
-        <div className="min-h-screen w-full bg-black/50 p-8">
+        <div className="min-h-screen w-full bg-bg1 p-8">
             <div className="max-w-7xl mx-auto">
-                <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">Sobre Nosotros</h1>
+                <h1 className="text-4xl font-bold text-center text-black mb-12">Sobre Nosotros</h1>
                 
-                <section className="bg-white/85 shadow-lg rounded-lg p-6 mb-12">
-                    <h2 className="text-3xl font-semibold text-gray-700 mb-4">Nuestra Misión</h2>
+                <section className="bg-white/65 shadow-lg rounded-lg p-6 mb-12">
+                    <h2 className="text-3xl font-semibold text-black mb-4">Nuestra Misión</h2>
                     <div className="flex flex-col md:flex-row items-center md:items-start">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg" alt="Nuestra Misión" className="w-full md:w-1/2 rounded-lg mb-6 md:mb-0 md:mr-6" />
-                        <div className="text-gray-600 leading-relaxed">
+                        <img src={logo} className="w-full md:w-1/2 rounded-lg mb-6 md:mb-0 md:mr-6" />
+                        <div className="text-black/90 leading-relaxed text-lg">
                         <p className="mb-4">
                             En <strong>Alimentos Santiago</strong>, nuestra misión es proporcionar alimentos nutritivos y sabrosos que ayuden a las personas a ahorrar tiempo en su ajetreado día. Entendemos la importancia de una alimentación saludable y balanceada, y nos esforzamos por ofrecer productos que cumplan con estos estándares.
                         </p>

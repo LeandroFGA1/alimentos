@@ -7,6 +7,9 @@ const theme = createTheme({
         white: {
             main: '#ffffff',
         },
+        bg: {
+            main:"#ff9e3f",
+        }
     },
 });
 
@@ -16,7 +19,7 @@ function MainLayout({children}) {
             <ThemeProvider theme={theme}>
                 <header className=' bg-green-500'><Header/></header>
                 <main className='mt-20 md:mt-24'>{children}</main>
-                <footer>owo</footer>
+                <footer className='bg-bg1 h-5'></footer>
             </ThemeProvider>
             
         </>

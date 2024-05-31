@@ -3,6 +3,7 @@ import LoginBtn from './LoginBtn';
 import CarritoBtn from './CarritoBtn';
 import NotifyBtn from './NotifyBtn';
 import { Link } from "react-router-dom";
+import logo from "../assets/AlimentosSantiagoLogobyDesigner.png"
 
 function Header() {
     const [isChecked, setIsChecked] = useState(false);
@@ -21,6 +22,7 @@ function Header() {
                             santiago
                             </span>
                         </h1>
+                        <img src={logo} alt="logo" className=' max-[400px]:hidden h-20' />
                         </div>
                     </a>
                     
@@ -35,7 +37,7 @@ function Header() {
                         <div className={`bg-white h-1 w-10 transition-all duration-300 ${isChecked ?" -rotate-45 -translate-y-3":" "}`}></div>
                     </div>
                     <nav className={`${isChecked ? "block":" hidden"} h-[calc(100vh-80px)] top-[80px] w-full bg-red-500 absolute sm:block sm:relative sm:h-full sm:top-0 sm:bg-transparent`}>
-                        <ul className='flex flex-col ml-8 gap-4  capitalize font-semibold text-secondary sm:flex-row sm:ml-4 text-lg sm:h-full sm:items-end lg:gap-6 md:text-xl lg:text-2xl'>
+                        <ul className='flex flex-col ml-8 gap-4  capitalize font-semibold text-white/80 sm:flex-row sm:ml-4 text-lg sm:h-full sm:items-end lg:gap-6 md:text-xl lg:text-2xl'>
                             <li className=" hover:text-white transition-all mb-2">
                                 <Link to={"/products"}>ordenar</Link>
                             </li>

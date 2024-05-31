@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
     return (
-    <div className=' h-[calc(110vh-90px)] w-full overflow-hidden'>
+    <div className=' h-[calc(110vh-90px)] w-full overflow-hidden bg-bg1'>
         <div className="flex flex-wrap">
             <div className="w-full sm:w-8/12 mb-10">
                 <div className="container mx-auto h-full sm:p-10">

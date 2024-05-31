@@ -1,9 +1,19 @@
 import React,{useState} from 'react'
 import AddBoxIcon from '@mui/icons-material/AddBox';
+import Tooltip from '@mui/material/Tooltip'
+
 function Card() {
     const [displayIngredients,setDisplayIngredients] =useState(false);
     const [showIngredients,setShowIngredients] = useState(false);
     const [colorAdd,setColorAdd] = useState(false);
+
+    const [count,setCount] = useState(0);
+
+    const addCount = (value)=>{
+
+    }
+
+
     const handleDisplay = ()=>{
         if(displayIngredients){
             setShowIngredients(!showIngredients);
@@ -25,17 +35,27 @@ function Card() {
                     <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg" alt="producto" className=' card-img object-cover h-[300px] w-72 rounded-t-xl'/>
                     <div className={` absolute w-full h-full transition-all duration-500 ${displayIngredients && showIngredients? " bg-black/85":" bg-transparent"}`}></div>
                     <div className={`card-ingredients absolute w-full h-full flex flex-col justify-between transition-all duration-500 ${displayIngredients? "block":"hidden"} ${showIngredients? " opacity-100 translate-x-0":" bg-transparent opacity-0 translate-x-20"}`}>
-                        <ul className='text-white'>
-                            <li>Lorem ipsum</li>
-                            <li>dolor sit.</li>
-                            <li>consectetur adipisicing elit.</li>
-                            <li>Repellat labore.</li>
-                        </ul>
+                        <div className='ml-7 mt-3'>
+                            <ul className='text-white capitalize list-disc'>
+                                <li>Ingrediente 1</li>
+                                <li>ingrediente 2</li>
+                                <li>Ingrediente 3</li>
+                                <li>ingrediente 4</li>
+                            </ul>
+                        </div>
+                        
                         <div className='etiquetas'>
                             <div  className='stickers-product flex gap-5 items-center justify-center mb-5'>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg"className=' h-5'/>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg"className=' h-5'/>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg"className=' h-5'/>
+                                <Tooltip title="apto celiaco">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg"className=' h-5'/>
+                                </Tooltip>
+                                <Tooltip title="apto vegano">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg"className=' h-5'/>
+                                </Tooltip>
+                                <Tooltip title="apto intolerante a la lactosa">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg"className=' h-5'/>
+                                </Tooltip>
+
                             </div>
                         </div>
                         <div className='text-white w-full flex items-end justify-center'>
@@ -48,13 +68,13 @@ function Card() {
                         >Ver Ingredientes</span>
                     </div>  
                 </div>
-                <div className='card-content flex flex-col h-[150px]  justify-between'>
+                <div className='card-content flex flex-col h-[150px] ml-2  justify-between'>
                     <span className='category-product'> totam beatae distinctio fugiat!</span>
                     <span className='name-product'> earum est nam molestias quibusdam iusto odio enim.</span>
                     <div className='card-btns h-fit w-full mb-3 flex gap-2 justify-around'>
                         <div className='flex gap-2 font-semibold'>
-                            <div className='w-[30px] h-8 bg-white/70 rounded flex items-center justify-center'>+1</div>
-                            <div className='w-[30px] h-8 bg-white/70 rounded flex items-center justify-center'>+5</div>
+                            <div className='w-[30px] h-8 bg-white/70 rounded flex items-center justify-center cursor-pointer'>+1</div>
+                            <div className='w-[30px] h-8 bg-white/70 rounded flex items-center justify-center cursor-pointer'>+5</div>
                         </div>
                         <input type="number" name="units-product" id="units-product" min="0" max="200" className=' bg-white/60 w-[50px] placeholder:text-xs placeholder:text-center h-8 rounded' placeholder='cantidad' value={null}/>
                         <div className='h-fit w-fit' onMouseEnter={hoverAdd} onMouseLeave={hoverAdd}>
