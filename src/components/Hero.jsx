@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Hero() {
     return (
     <div className=' h-[calc(110vh-90px)] w-full overflow-hidden bg-bg1'>
@@ -16,7 +16,7 @@ function Hero() {
                             <h1 className="text-4xl lg:text-6xl font-bold">Soy un <span className="text-white">Slogan</span> Para la compañia.</h1>
                             <div className="w-20 h-2 bg-white/90 my-4"></div>
                             <p className="text-xl mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maiores neque eaque ea odit placeat, tenetur illum distinctio nulla voluptatum a corrupti beatae tempora aperiam quia id aliquam possimus aut.</p>
-                            <button className="bg-black shadow-lg hover:bg-black/80 text-white text-2xl font-medium px-4 py-2 rounded"><a href="/register">Registrarme</a></button>
+                            <button className="bg-black shadow-lg hover:bg-black/80 text-white text-2xl font-medium px-4 py-2 rounded"><Link to={"/register"}>Registrarme</Link></button>
                         </div>
                     </div>
                 </div>
