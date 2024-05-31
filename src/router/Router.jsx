@@ -19,7 +19,6 @@ function Router() {
             <Route path='/services' element={<Services/>}/>
             <Route path='/aboutUs'  element={<AboutUs/>}/>
             <Route path='/contact'  element={<Contact/>}/>
-            <Route path='*' element={<Navigate to="/" replace />} />
         </Routes>
     )
 }
