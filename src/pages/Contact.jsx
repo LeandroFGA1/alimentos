@@ -2,11 +2,11 @@ import React from 'react';
 
 function Contact() {
     return (
-        <div className="min-h-screen w-full bg-gray-100 p-8">
+        <div className="min-h-screen w-full bg-black/50 p-8">
             <div className="max-w-7xl mx-auto">
                 <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">Contacto</h1>
                 
-                <section className="bg-white shadow-lg rounded-lg p-6 mb-12">
+                <section className="bg-white/80 shadow-lg rounded-lg p-6 mb-12">
                     <h2 className="text-3xl font-semibold text-gray-700 mb-4">Información de Contacto</h2>
                     <div className="text-gray-600 leading-relaxed">
                         <p className="mb-4">
