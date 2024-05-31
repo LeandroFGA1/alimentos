@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function LoginBtn() {
     const [isHovered, setIsHovered] = useState(false);
-    const [isClicked, setIsClicked] = useState(false);
+
 
 
 
@@ -16,15 +16,11 @@ function LoginBtn() {
         setIsHovered(false);
     };
 
-    const handleClick = () => {
-        setIsClicked(!isClicked);
-    };
 
     return (
         <div>
                 <div
                     className='flex items-center justify-center gap-2 bg-black p-1 px-2 w-fit rounded-lg border-solid border-[2px] border-secondary sm:border-none sm:p-0 lg:border-[2px]'
-                    onClick={handleClick}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >
